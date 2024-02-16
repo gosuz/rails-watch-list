@@ -1,5 +1,4 @@
-<%# <h1><%= @list.name %>
+<h1><%= @list.name%> </h1>
 
-<a href="/restaurants/28" class="btn btn-primary">
-  Jules Verne <span class="label label-primary">OPEN</span>
-</a>
+
+  <%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
