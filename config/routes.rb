@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   root to: 'lists#index'
-  resources :lists, only: [:index, :show, :new, :create]
+  resources :lists, only: [:show, :new, :create]
 
   resources :bookmarks, only: [:new, :create, :destroy]
   end

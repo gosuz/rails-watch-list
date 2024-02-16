@@ -5,7 +5,8 @@ class ListsController < ApplicationController
 
   def show
     # gets one value
-    @list = List.find(params[:id])
+    raise
+    @list = List.find_by(params[:id])
   end
 
   def new
